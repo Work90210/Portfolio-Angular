@@ -5,22 +5,22 @@
       <div class="col-md-4">
         <section class="card card-cascade card-avatar mb-4">
 
-          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(8).jpg" alt="">
+          <img src="{{user.profilePic}}" alt="">
 
           <!--Card content-->
           <div class="card-body">
               <!--Title-->
-              <h4 class="card-title"><strong>John Doe</strong></h4>
-              <h5>Web designer at <a href="">MDBootstrap</a></h5>
-              <p class="dark-grey-text">Johannesburg, South Africa</p>
+              <h4 class="card-title"><strong>{{user.name}}</strong></h4>
+              <h5>{{user.title}} at <a target="_blank" href="{{user.workWebsite}}">{{user.workName}}</a></h5>
+              <p class="dark-grey-text">{{user.city}}, {{user.country}}</p>
 
               <!-- Social -->
-              <a type="button" target="_blank" href="https://www.facebook.com/kyle.fuhri" class="btn-floating btn-small transparent waves-effect waves-light"><i class="fa fa-facebook dark-grey-text"></i></a>
-              <a type="button" target="_blank" href="https://github.com/Work90210" class="btn-floating btn-small transparent waves-effect waves-light"><i class="fa fa-github dark-grey-text"></i></a>
-              <a type="button" target="_blank" href="https://linkedin.com/in/kyle-fuhri" class="btn-floating btn-small transparent waves-effect waves-light"><i class="fa fa-linkedin dark-grey-text"></i></a>
+              <a type="button" target="_blank" href="{{user.facebookLink}}" class="btn-floating btn-small transparent waves-effect waves-light"><i class="fa fa-facebook dark-grey-text"></i></a>
+              <a type="button" target="_blank" href="{{user.githubLink}}" class="btn-floating btn-small transparent waves-effect waves-light"><i class="fa fa-github dark-grey-text"></i></a>
+              <a type="button" target="_blank" href="{{user.linkedinLink}}" class="btn-floating btn-small transparent waves-effect waves-light"><i class="fa fa-linkedin dark-grey-text"></i></a>
 
               <!--Text-->
-              <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+              <p class="card-text mt-3">{{user.description}}
               </p>
           </div>
 
